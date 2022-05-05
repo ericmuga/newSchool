@@ -9,5 +9,5 @@
       </head>
       <body>
         @inertia
-      </body>
+        @routes
     </html>

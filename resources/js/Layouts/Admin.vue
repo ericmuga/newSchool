@@ -92,16 +92,10 @@ import { usePage } from '@inertiajs/inertia-vue3'
 import { computed,ref } from 'vue'
 
 const navigation = [
-  { name: 'Dashboard', href: route('dashboard'), current:false,component:'Dashboard/Index' },
-  { name: 'Members', href: route('members.index'), current:false,component:'Member/Index' },
-  { name: 'Meetings', href: route('meetings.index'), current:false,component:'Meeting/Index' },
-//   { name: 'Reports', href: route('reports.index'), current: false,component:'Reports/Index' },
-//   { name: 'Totals', href: route('totals.index'), current: false,component:'Totals/Index' },
-//   { name: 'Totals', href: route('totals.index'), current: false,component:'Totals/Index' },
-//   { name: 'GrandTotals', href:route('grandtotals.index'), current: false,component:'GrandTotals/Index' },
-//   { name: 'Subtotals', href:route('subtotals.index'), current: false,component:'Subtotals/Index' },
-//   { name: 'Accounts', href:route('accounts.index'), current: false,component:'Accounts/Index' },
-//   { name: 'Account Entries', href: route('accountentries.index'), current: false,component:'AccountEntries/Index' },
+  { name: 'Dashboard', href: route('landing'), current:false,component:'Landing' },
+//   { name: 'Members', href: route('members.index'), current:false,component:'Member/Index' },
+//   { name: 'Meetings', href: route('meetings.index'), current:false,component:'Meeting/Index' },
+
 ]
 
 export default {
