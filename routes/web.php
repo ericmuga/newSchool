@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
+use App\Http\Controllers\AuthController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,4 +15,23 @@ use Inertia\Inertia;
 |
 */
 
+//authentication
+Route::get('/login',[AuthController::class,'create'])->name('login');
+Route::post('/login',[AuthController::class,'store'])->name('login.store');
+Route::post('logout',[AuthController::class,'logout'])->name('logout');
+Route::get('register',fn()=>Inertia::reander('Auth/Register'))->name('register')->breadcrumbs('User Registration');
+
+ Route::middleware(['auth'])->group(function () {
+
+
+    // Route::get('/dashboard',[DashboardController::class,'index'])
+    //      ->name('dashboard')
+    //      ->breadcrumbs('dashboard');
+
+Route::get('/dashboard', fn()=>(Inertia::render('Landing',[])))
+     ->name('dashboard')
+     ->breadcrumbs('dashboard');
+    // Route::get('/',[DashboardController::class,'index']);
+ });
 Route::get('/', fn()=>(Inertia::render('Landing',[])))->name('landing');
+

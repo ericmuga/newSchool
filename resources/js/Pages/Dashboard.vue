@@ -14,20 +14,20 @@
 
                     <template #title >
                       <div class="text-center text-slate-600">
-                          Students
+                          Members
                          <UsersIcon class="w-5 h-5 text-center text-slate-600"/>
                       </div>
                     </template>
                     <template #subtitle>
-                        Student Details
+                        Member Details
                     </template>
                     <template #content>
-                      History
+                      Registered Members
                      </template>
                     <template #footer>
                         <div class="text-center">
                             <Link
-                              href="/"
+                              :href="route('members.index')"
                             >
                                <Button icon="pi pi-book" label="Explore"  />
                             </Link>
@@ -42,20 +42,20 @@
 
                     <template #title >
                       <div class="text-center text-blue-500">
-                          Tutors
+                          Meetings
                       <CollectionIcon class="w-5 h-5 text-center text-blue-500"/>
                       </div>
                     </template>
                     <template #subtitle>
-                          Tutor Details
+                          Meeting Details
                     </template>
                     <template #content>
-                      History
+                      Meetings
                      </template>
                       <template #footer>
                         <div class="text-center">
                             <Link
-                              href="/"
+                              :href="route('meetings.index')"
                             >
                                <Button icon="pi pi-book" label="Explore"  />
                             </Link>
@@ -71,15 +71,15 @@
 
                     <template #title >
                       <div class="text-center text-teal-600">
-                          Academics
+                          Guests
                          <UsersIcon class="w-5 h-5 text-center text-teal-600"/>
                       </div>
                     </template>
                     <template #subtitle>
-                         Details
+                        Guests Details
                     </template>
                     <template #content>
-                     History
+                     Some More details..
                      </template>
                     <template #footer>
                         <div class="text-center">
@@ -99,15 +99,15 @@
 
                     <template #title >
                       <div class="text-center text-amber-700">
-                         Finance
+                         Settings
                         <CogIcon class="w-5 h-5 text-amber-700"/>
                       </div>
                     </template>
                     <template #subtitle>
-                         Fees
+                         Settings
                     </template>
                     <template #content>
-                      Billables
+                      Settings
                      </template>
 
                       <template #footer>

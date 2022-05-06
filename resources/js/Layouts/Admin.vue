@@ -65,14 +65,14 @@
       </div>
     </DisclosurePanel>
   </Disclosure>
-  <!-- <transition name="toast">
+  <transition name="toast">
     <div v-if="$page.props.flash.message!='' &&showToast"
                     class="fixed flex px-4 py-2 mt-1 text-sm font-light tracking-wide rounded-lg right-4 top-16"
                     :class="$page.props.flash.type==='success'?'bg-green-400':'bg-red-400'"
             >
                 {{ $page.props.flash.message }}
     </div>
-  </transition> -->
+  </transition>
 
    <div class="grid w-full h-full p-5 border-2 rounded-lg shadow-lg shadow-slate-400 place-items-center">
 
