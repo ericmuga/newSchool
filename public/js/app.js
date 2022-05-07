@@ -19761,7 +19761,7 @@ var _hoisted_15 = {
   "class": "px-2 pt-2 pb-3 space-y-1"
 };
 var _hoisted_16 = {
-  "class": "grid w-full h-full p-5 border-2 rounded-lg shadow-lg shadow-slate-400 place-items-center"
+  "class": "grid w-full h-full place-items-center"
 };
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_MenuIcon = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("MenuIcon");
@@ -20609,10 +20609,10 @@ var _withScopeId = function _withScopeId(n) {
 };
 
 var _hoisted_1 = {
-  "class": "grid min-h-screen px-3 mx-2 place-items-center"
+  "class": "min-h-screen place-items-center"
 };
 var _hoisted_2 = {
-  "class": "grid gap-2 md:grid-cols-2 sm:grid-cols-1"
+  "class": "grid gap-2 md:grid-cols-2 sm:grid-cols-1 max-w-sm"
 };
 var _hoisted_3 = {
   "class": "col-span-1 rounded-lg shadow-md border-slate-200 card hover:shadow shadow-slate-400 hover:border-2"
@@ -20697,10 +20697,8 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     onEnter: $setup.enter
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-      return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("section", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Card, {
-        style: {
-          "width": "25em"
-        }
+      return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Card, {
+        style: {}
       }, {
         title: (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
           return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [_hoisted_5, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_UsersIcon, {

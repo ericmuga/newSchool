@@ -74,7 +74,7 @@
     </div>
   </transition>
 
-   <div class="grid w-full h-full p-5 border-2 rounded-lg shadow-lg shadow-slate-400 place-items-center">
+   <div class="grid w-full h-full  place-items-center">
 
       <slot/>
 
