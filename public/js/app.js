@@ -19323,7 +19323,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var navigation = [{
   name: 'Dashboard',
-  href: route('landing'),
+  href: route('dashboard'),
   current: false,
   component: 'Landing'
 } //   { name: 'Members', href: route('members.index'), current:false,component:'Member/Index' },
@@ -19761,7 +19761,7 @@ var _hoisted_15 = {
   "class": "px-2 pt-2 pb-3 space-y-1"
 };
 var _hoisted_16 = {
-  "class": "grid w-full h-full place-items-center"
+  "class": "grid w-full h-full p-5 border-2 rounded-lg shadow-lg shadow-slate-400 place-items-center"
 };
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_MenuIcon = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("MenuIcon");
@@ -19952,21 +19952,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     _: 1
     /* STABLE */
 
-  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(vue__WEBPACK_IMPORTED_MODULE_0__.Transition, {
-    name: "toast"
-  }, {
-    "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-      return [_ctx.$page.props.flash.message != '' && _ctx.showToast ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", {
-        key: 0,
-        "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)(["fixed flex px-4 py-2 mt-1 text-sm font-light tracking-wide rounded-lg right-4 top-16", _ctx.$page.props.flash.type === 'success' ? 'bg-green-400' : 'bg-red-400'])
-      }, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$page.props.flash.message), 3
-      /* TEXT, CLASS */
-      )) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)];
-    }),
-    _: 1
-    /* STABLE */
-
-  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_16, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.renderSlot)(_ctx.$slots, "default")]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("footer "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_FooterAdmin)], 64
+  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <transition name=\"toast\">\n    <div v-if=\"$page.props.flash.message!='' &&showToast\"\n                    class=\"fixed flex px-4 py-2 mt-1 text-sm font-light tracking-wide rounded-lg right-4 top-16\"\n                    :class=\"$page.props.flash.type==='success'?'bg-green-400':'bg-red-400'\"\n            >\n                {{ $page.props.flash.message }}\n    </div>\n  </transition> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_16, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.renderSlot)(_ctx.$slots, "default")]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("footer "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_FooterAdmin)], 64
   /* STABLE_FRAGMENT */
   );
 }
@@ -20609,10 +20595,10 @@ var _withScopeId = function _withScopeId(n) {
 };
 
 var _hoisted_1 = {
-  "class": "min-h-screen place-items-center"
+  "class": "grid min-h-screen place-items-center w-screen"
 };
 var _hoisted_2 = {
-  "class": "grid gap-2 md:grid-cols-2 sm:grid-cols-1 max-w-sm"
+  "class": "grid gap-2 md:grid-cols-2 sm:grid-cols-1 -mx-2"
 };
 var _hoisted_3 = {
   "class": "col-span-1 rounded-lg shadow-md border-slate-200 card hover:shadow shadow-slate-400 hover:border-2"
@@ -20697,8 +20683,10 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     onEnter: $setup.enter
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-      return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Card, {
-        style: {}
+      return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("section", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Card, {
+        style: {
+          "width": "25em"
+        }
       }, {
         title: (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
           return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [_hoisted_5, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_UsersIcon, {

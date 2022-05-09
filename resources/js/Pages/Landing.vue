@@ -1,5 +1,5 @@
 <template>
-    <div class="min-h-screen  place-items-center ">
+    <div class="grid min-h-screen  place-items-center w-screen">
         <!--This will be the initial section of the dashboard -->
         <transition
           appear
@@ -8,9 +8,9 @@
           @enter="enter"
         >
 
-        <div class="grid gap-2 md:grid-cols-2 sm:grid-cols-1 max-w-sm ">
+        <section class="grid gap-2 md:grid-cols-2 sm:grid-cols-1 -mx-2">
             <div class="col-span-1 rounded-lg shadow-md border-slate-200 card hover:shadow shadow-slate-400 hover:border-2">
-               <Card style="">
+               <Card style="width: 25em">
 
                     <template #title >
                       <div class="text-center text-slate-600">
@@ -126,7 +126,7 @@
             </div>
 
 
-        </div>
+        </section>
         </transition>
     </div>
 </template>

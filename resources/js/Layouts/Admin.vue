@@ -65,16 +65,16 @@
       </div>
     </DisclosurePanel>
   </Disclosure>
-  <transition name="toast">
+  <!-- <transition name="toast">
     <div v-if="$page.props.flash.message!='' &&showToast"
                     class="fixed flex px-4 py-2 mt-1 text-sm font-light tracking-wide rounded-lg right-4 top-16"
                     :class="$page.props.flash.type==='success'?'bg-green-400':'bg-red-400'"
             >
                 {{ $page.props.flash.message }}
     </div>
-  </transition>
+  </transition> -->
 
-   <div class="grid w-full h-full  place-items-center">
+   <div class="grid w-full h-full p-5 border-2 rounded-lg shadow-lg shadow-slate-400 place-items-center">
 
       <slot/>
 
@@ -92,7 +92,7 @@ import { usePage } from '@inertiajs/inertia-vue3'
 import { computed,ref } from 'vue'
 
 const navigation = [
-  { name: 'Dashboard', href: route('landing'), current:false,component:'Landing' },
+  { name: 'Dashboard', href: route('dashboard'), current:false,component:'Landing' },
 //   { name: 'Members', href: route('members.index'), current:false,component:'Member/Index' },
 //   { name: 'Meetings', href: route('meetings.index'), current:false,component:'Meeting/Index' },
 
